@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.seotitle /}_{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+{dede:include filename="tongTwoNav.htm"/}
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">QUESTION ADN ANSWER</span> 
+				<span class="s2">西点培训Q&A栏目</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="qAaTitle">
+			<p class="td"><a href="/qaa/qaaone">私房蛋糕培训问题</a></p>
+			<p class="td"><a href="/qaa/qaatwo">蛋糕培训问题</a></p>
+			<p class="td"><a href="/qaa/qaathree">裱花培训问题</a></p>
+			<p class="td"><a href="/qaa/qaafour">面包培训问题</a></p>
+			<p class="td"><a href="/qaa/qaafive">咖啡培训问题</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+    <div class="wrap">
+        <div class="contentPage marginTop40">
+            <div class="leftTwo">
+                <div class="nav">
+                    <p> 
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cont marginTop20">
+	<div class="wrap overflow">
+		<div class="qAaCon">
+			{dede:list pagesize='10'}
+			<p>
+				<span class="time">
+					<img src="/templets/pc/images/iconQaATitle.png"> POST TIME: [field:pubdate function="MyDate('Y.m.d',@me)"/]
+				</span>
+				<span class="title">
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:title /]
+					</a>
+				</span>
+				<span class="con">
+					[field:description function='cn_substr(@me,280)'/]...
+				</span>
+				<span class="tips">
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						READ MORE TIPS+
+					</a>
+				</span>
+			</p>
+			{/dede:list}
+		</div>
+		<div class="pagesTong">
+        	<div class="pageCon">
+               <ul class="pagelist">
+                {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+               </ul>
+      		</div>
+        </div>
+	</div>
+</div>
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="redBorderTitle">
+			我们专注培训懂营销的西点师|不求锦上添花，但求雪中送炭
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="smallEduNav">
+			<ul>
+				<li class="xian">
+					<a href="">
+						私房蛋糕培训 
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						西点培训开店实战班 
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						烘焙培训翻糖王牌班 
+					</a>
+				</li>
+				<li class="right">
+					<a href="">
+						咖啡西点蛋糕烘焙班 
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+{dede:include filename="message.htm"/} 
+
+{dede:include filename="iconBrand.htm"/}
+
+<div class="cont">
+	<div class="marginTop20">
+	</div>
+</div>
+  
+{dede:include filename="footer.htm"/}
+
+</body>  
+</html>
+

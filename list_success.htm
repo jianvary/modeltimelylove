@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.seotitle /}_{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+{dede:include filename="tongTwoNav.htm"/}
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">EXCELLENT COURSE</span> 
+				<span class="s2">成功案例</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="bigTitleRow">
+			<h3>
+				他们大步踏出舒适圈，靠{学习+创业}实现大翻身
+			</h3>
+			<h4>
+				哪怕花200万开店|不懂技术|不懂管理|不懂品牌营销都是打水漂
+			</h4>
+		</div>
+	</div>
+</div>
+
+{dede:include filename="tongStudenCase.htm"/} 
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">RECOMMENDED COURSES</span> 
+				<span class="s2">皇室御用西点师推荐课程</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+{dede:include filename="tongCourseTuiJian.htm"/}
+
+<div class="cont">
+    <div class="wrap marginTop50">
+        <div class="recommendTitle">
+            <p class="t1">
+                
+            </p>
+            <p class="t2">
+                <span class="s1">TEACHERS & TEAM</span> 
+                <span class="s2">
+                    <a href="/chanpinzhanshi/" title="学员作品">学员作品</a>
+                </span>
+            </p>
+            <p class="t3">
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cont">
+    <div class="wrap marginTop20">
+        <div class="bigTitleRow">
+            <h3>
+                不求锦上添花/但愿雪中送炭
+            </h3>
+            <h4>
+                [封装幸福回忆]将智慧&技术带着走
+            </h4>
+        </div>
+    </div>
+</div>
+
+<div class="cont">
+    <div class="wrap marginTop20">
+        <div class="productThree">
+            <ul>
+                {dede:arclist typeid="46" type="image." row="10"}
+                <li>
+                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                        [field:image /]
+                    </a>
+                    <span>
+                        <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                            [field:title /]
+                        </a>
+                    </span>
+                </li>
+                {/dede:arclist}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{dede:include filename="message.htm"/} 
+
+{dede:include filename="iconBrand.htm"/}
+
+{dede:include filename="tongHotCourse.htm"/}
+
+{dede:include filename="worldImg.htm"/} 
+  
+{dede:include filename="footer.htm"/}
+
+</body>  
+</html>
+

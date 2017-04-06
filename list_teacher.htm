@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.seotitle /}_{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+{dede:include filename="tongTwoNav.htm"/}
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">TEACHERS & TEAM</span> 
+				<span class="s2">师资团队</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="bigImg">
+			{dede:arclist typeid="2" type="image." row="1" flag="h"}
+				<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /] 
+				</a>
+			{/dede:arclist}
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap">
+		<div class="product marginTop20">
+			<ul>
+				{dede:arclist typeid="2" type="image." row="9" noflag='h'}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+							[field:title /]
+						</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+{dede:include filename="message.htm"/} 
+
+{dede:include filename="iconBrand.htm"/}
+
+<div class="cont marginTop20">
+	<div class="worldImg">
+		<img src="/templets/pc/images/world.jpg" />
+	</div>
+</div>
+  
+{dede:include filename="footer.htm"/}
+
+</body>  
+</html>
+

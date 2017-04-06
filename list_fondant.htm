@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.seotitle /}_{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+{dede:include filename="tongTwoNav.htm"/}
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">CAKES TRAINING COURSES</span> 
+				<span class="s2">翻糖蛋糕培训课程</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<p class="subBigTitleRed">
+			翻糖蛋糕学习，成为西点市场稀缺人才，开蛋糕店&高薪就业有保障
+		</p>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="bigImg">
+			<img src="/templets/pc/images/ad/classBannerBigThree.jpg" />
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="product">
+			<ul>
+				{dede:arclist typeid="52" type="image." row="6"}
+                <li>
+                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                        [field:image /]
+                    </a>
+                    <span>
+                        <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                            [field:title /]
+                        </a>
+                    </span>
+                </li>
+                {/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont newsNavBgColor">
+    <div class="wrap marginTop20">
+        <script src="/templets/pc/js/timeNewsLuBoo.js"></script>
+        <div class="box_csso"  >
+        </div> 
+        <div id="pagenavio1" > 
+            <b class="prevo" id="prevo"></b>
+            <div class="in-entry-statuso" id="updowno">
+            <span class="selo" id="span_prevo"></span><span id="span_nexto"></span>
+            </div>
+            <b class="nexto" id="nexto"></b> 
+        </div>  
+        <div class="box_csso">
+          <div id="slidero2" class="swipe-jyo" >
+            <ul class="box01_listo">
+              
+               <li class="li_listo" >
+                <div class="newsNav marginTop20">   
+                    <div class="content">
+                        {dede:arclist typeid="37" type="image." row="1" }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="37" type="image." row="1" }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="37" row="5" titlelen="40" limit="1,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第一框 -->   
+                    <div class="content">
+                        {dede:arclist typeid="37" type="image." row="1" limit='1,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="37" type="image." row="1" limit='1,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="37" row="5" titlelen="40" limit="6,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第二框 -->   
+                    <div class="content">
+                        {dede:arclist typeid="37" type="image." row="1" limit='2,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="37" type="image." row="1" limit='2,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="37" row="5" titlelen="40" limit="11,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第三框 -->    
+                    <div class="content">
+                        {dede:arclist typeid="37" type="image." row="1" limit='3,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="37" type="image." row="1" limit='3,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="37" row="5" titlelen="40" limit="16,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第四框 -->  
+                </div>
+              </li>
+              
+               <li class="li_listo" >
+                <div class="newsNav marginTop20">   
+                    <div class="content">
+                        {dede:arclist typeid="38" type="image." row="1" }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="38" type="image." row="1" }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="38" row="5" titlelen="40" limit="1,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第一框 -->   
+                    <div class="content">
+                        {dede:arclist typeid="38" type="image." row="1" limit='1,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="38" type="image." row="1" limit='1,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="38" row="5" titlelen="40" limit="6,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第二框 -->   
+                    <div class="content">
+                        {dede:arclist typeid="38" type="image." row="1" limit='2,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="38" type="image." row="1" limit='2,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="38" row="5" titlelen="40" limit="11,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第三框 -->    
+                    <div class="content">
+                        {dede:arclist typeid="38" type="image." row="1" limit='3,1' }
+                            <p class="box">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:image /]
+                                </a>
+                            </p>
+                            <p class="h3">
+                                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                    [field:title /]
+                                </a>
+                            </p>
+                        {/dede:arclist} 
+                        <p class="titleList">
+                            {dede:arclist typeid="38" type="image." row="1" limit='3,1' }
+                                <span class="con">
+                                    Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]
+                                </span>
+                            {/dede:arclist} 
+                            {dede:arclist typeid="38" row="5" titlelen="40" limit="16,5" }
+                                <span> 
+                                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                                        [field:title /]
+                                    </a>
+                                </span>
+                            {/dede:arclist}
+                        </p>    
+                    </div> <!-- 翻糖蛋糕学习解疑第四框 -->  
+                </div>
+              </li>
+            </ul>
+         </div>
+          <div class="s_sheado threeColuNavTwo marginTop30">
+            <ul id="pagenavio2" class="jy-pageo">
+              <li class="one"><a href="/fondnt/one/" class="active">翻糖蛋糕培训常识</a></li>
+              <li class="two"><a href="/fondnt/two/">翻糖蛋糕学习解疑</a></li> 
+            </ul>
+          </div>
+        </div>
+        <script>
+        var totalo=$(".box_csso").length+1; 
+        for(n=1;n<totalo;n++){
+            var pageo='pagenavio'+n;
+            var mslideo='slidero'+n;
+            var mtitleo='emtitleo'+n;
+            arrdivo = 'arrdivo' + n;
+            if(n == 1)
+            {
+                var aso = document.getElementById(pageo).getElementsByTagName('b');
+                var tto=new TouchSlidero({id:mslideo,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var aso = document.getElementById(this.pageo).getElementsByTagName('b');            
+                    if(aso[index].id=='prevo')
+                    {
+                        document.getElementById('span_prevo').className = 'selo' ;
+                        document.getElementById('span_nexto').className = '' ;
+                    }
+                    if(aso[index].id=='next')
+                    {
+                        document.getElementById('span_prevo').className = '' ;
+                        document.getElementById('span_nexto').className = 'selo' ;
+                    }
+                    this.p=index;       
+                }});
+            }
+            if(n == 2)
+            {
+                aso = document.getElementById(pageo).getElementsByTagName('a');
+                var tto=new TouchSlidero({id:mslideo,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var as=document.getElementById(this.pageo).getElementsByTagName('a');
+                    aso[this.p].className='';
+                    aso[index].className='activeo';
+                    this.p=index;
+                }});
+            }
+            tto.pageo = pageo;
+            tto.p = 0;
+            for(var i=0;i<aso.length;i++){
+                (function(){
+                    var j=i;
+                    aso[j].tto = tto;
+                    aso[j].onmouseover=function(){
+                        this.tto.slideo(j);
+                        return false;
+                    }
+                })();
+            }
+        }
+        </script> 
+   </div>
+</div>
+
+{dede:include filename="tongHotCourse.htm"/}
+
+{dede:include filename="message.htm"/} 
+
+{dede:include filename="iconBrand.htm"/}
+
+<div class="cont">
+	<div class="marginTop20">
+	</div>
+</div>
+  
+{dede:include filename="footer.htm"/}
+
+</body>  
+</html>
+

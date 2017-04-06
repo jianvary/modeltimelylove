@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+{dede:include filename="tongTwoNav.htm"/}
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">	
+			</p>
+			<p class="t2">
+				<span class="s1">LATEST ACTIVITIES</span> 
+				<span class="s2">优惠活动</span>
+			</p>
+			<p class="t3">
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+    <div class="wrap">
+        <div id="fourLuBo" class="picBtnTop">
+            <div class="adBigImg">
+                <ul>
+                    <li>
+                        <img src="/templets/pc/images/ad/discountOne.jpg" alt="私房蛋糕培训班优惠放送"> 
+                    </li>
+                     <li>
+                        <img src="/templets/pc/images/ad/discountTwo.jpg" alt="开店创业全能班热门课程"> 
+                    </li>
+                    <li>
+                        <img src="/templets/pc/images/ad/discountThree.jpg" alt="年初劲爆特惠 预约创业课程">
+                    </li>
+                    <li>
+                        <img src="/templets/pc/images/ad/discountFour.jpg" alt="独家赠送课程"> 
+                    </li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul class="bigImgTitleEdu">
+                    <li class="con"> 
+                        <a href="#" title="私房蛋糕培训班优惠放送">
+                            <h3>
+                                私房蛋糕培训班优惠放送 
+                            </h3>
+                            <h4>
+                                <span>优惠价8800MB</span>
+                            </h4>
+                            <h5>
+                                雪中送炭 技术|管理|营销一站式培训
+                            </h5>
+                        </a>
+                    </li>
+                    <li class="con"> 
+                        <a href="#" title="开店创业全能班热门课程">
+                            <h3>
+                                开店创业全能班热门课程
+                            </h3>
+                            <h4>
+                                <span>抢学价13800 MB</span>
+                            </h4>
+                            <h5>
+                                西点培训创业无忧 仅限前20名
+                            </h5>
+                        </a>
+                    </li>
+                    <li class="con"> 
+                        <a href="#" title="年初劲爆特惠">
+                            <h3>
+                                年初劲爆特惠 预约创业课程
+                            </h3>
+                            <h4>
+                                <span>送价值9800MB</span>
+                            </h4>
+                            <h5>
+                                纯熟技术X超强管理X品牌营销=财富增值
+                            </h5>
+                        </a>
+                    </li>
+                    <li class="con"> 
+                        <a href="#" title="独家赠送课程">
+                            <h3>
+                                独家赠送课程
+                            </h3>
+                            <h4>
+                                <span>0MB 免费 </span>
+                            </h4>
+                            <h5>
+                                全年最优惠 全年最优惠 名额极其有限
+                            </h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/templets/pc/js/SuperSlide.2.1.1.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    jQuery("#fourLuBo").slide({
+        mainCell: ".adBigImg ul",
+        effect: "fold",
+        autoPlay: true,
+        timer:3000,  
+        delayTime: 1000
+    });
+</script>
+
+<div class="cont bgColorFull marginTop20">
+	<a href="#" title="技术培训">
+		<img src="/templets/pc/images/ad/adOne.jpg" alt="技术培训">
+	</a>
+</div>
+
+<div class="cont marginTop20">
+	<div class="wrap">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">BUSINESS COURSES</span> 
+				<span class="s2">开店创业课程</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop10">
+		<div class="smallEduNav">
+			<ul>
+				<li class="xian">
+					<a href="">
+						私房蛋糕培训    
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						西点培训开店实战班    
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						烘焙培训翻糖王牌班    
+					</a>
+				</li>
+				<li class="right">
+					<a href="">
+						咖啡西点蛋糕烘焙班 
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="product">
+			<ul>
+				{dede:arclist typeid="30,34" type="image." row="6"}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+							[field:title /]
+						</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont bgColorFull marginTop30">
+	<a href="#" title="一分钟电话">
+		<img src="/templets/pc/images/ad/adTwo.jpg" alt="一分钟电话">
+	</a>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">EXCELLENT COURSE</span> 
+				<span class="s2">
+					<a href="/proven/dangaothree" title="精品课程">
+						精品课程 
+					</a>
+				</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop10">
+		<div class="smallEduNav">
+			<ul>
+				<li class="xian">
+					<a href="">
+						翻糖蛋糕培训  
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						蛋糕裱花培训   
+					</a>
+				</li>
+				<li class="xian">
+					<a href="">
+						西点培训班   
+					</a>
+				</li>
+				<li class="right">
+					<a href="">
+						咖啡培训班 
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="product">
+			<ul>
+				{dede:arclist typeid="45,4" type="image." row="6"}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+							[field:title /]
+						</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">EXCELLENT COURSE</span> 
+				<span class="s2">学员案例</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="bigTitleRow">
+			<h3>
+				他们大步踏出舒适圈，靠{学习+创业}实现大翻身
+			</h3>
+			<h4>
+				哪怕花200万开店|不懂技术|不懂管理|不懂品牌营销都是打水漂
+			</h4>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="productTwo">
+			<ul>
+				{dede:arclist typeid="7,5" type="image." row="4"}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+							[field:title /]
+						</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">TEACHERS & TEAM</span> 
+				<span class="s2">师资团队</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="bigImg">
+			{dede:arclist typeid="2" type="image." row="1" flag="h"}
+				<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+				</a>
+			{/dede:arclist}
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="product">
+			<ul>
+				{dede:arclist typeid="2,32" type="image." row="3"}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">[field:title /]</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">TEACHERS & TEAM</span> 
+				<span class="s2">作品展示</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="bigTitleRow">
+			<h3>
+				不求锦上添花/但愿雪中送炭
+			</h3>
+			<h4>
+				[封装幸福回忆]将智慧&技术带着走
+			</h4>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="productThree">
+			<ul>
+				{dede:arclist typeid="46,20" type="image." row="10"}
+				<li>
+					<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+						[field:image /]
+					</a>
+					<span>
+						<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+							[field:title /]
+						</a>
+					</span>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">RECOMMENDED COURSES</span> 
+				<span class="s2">皇室御用西点师推荐课程</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="cont">
+	<div class="wrap marginTop20">
+		<div class="coursesNav">
+			<div class="content">
+				<p class="box">
+					<span class="h3"><img src="/templets/pc/images/whiteTang.png" /></span>
+					<span class="h4">私房蛋糕培训班</span>
+				</p>
+				<p class="brand">
+					<img src="/templets/pc/images/blueXue.png" />
+				</p>
+				<p class="title">
+					<span>8800RMB</span>
+					<span class="normal">精品创业课程</span>
+				</p>
+			</div>
+			<div class="content">
+				<p class="box two">
+					<span class="h3"><img src="/templets/pc/images/blackTang.png" /></span>
+					<span class="h4">私房蛋糕培训班</span>
+				</p>
+				<p class="brand blak">
+					<img src="/templets/pc/images/yellowXue.png" />
+				</p>
+				<p class="title">
+					<span>8800RMB</span> 
+					<span class="normal">精品创业课程</span>
+				</p>
+			</div>
+			<div class="content">
+				<p class="box three">
+					<span class="h3"><img src="/templets/pc/images/whiteTang.png" /></span>
+					<span class="h4">私房蛋糕培训班</span>
+				</p>
+				<p class="brand">
+					<img src="/templets/pc/images/grayXue.png" />
+				</p>
+				<p class="title">
+					<span>8800RMB</span>
+					<span class="normal">精品创业课程</span>
+				</p>
+			</div>
+			<div class="content">
+				<p class="box four">
+					<span class="h3"><img src="/templets/pc/images/whiteTang.png" /></span>
+					<span class="h4">私房蛋糕培训班</span>
+				</p>
+				<p class="brand">
+					<img src="/templets/pc/images/redXue.png" />
+				</p>
+				<p class="title">
+					<span>8800RMB</span>
+					<span class="normal">精品创业课程</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cont newsNavBgColor marginTop30">
+	<div class="wrap marginTop20">
+		<script src="/templets/pc/js/timeNewsLuBo.js"></script>
+        <div class="box_css"  >
+        </div> 
+        <div id="pagenavi1" > 
+            <b class="prev" id="prev"></b>
+            <div class="in-entry-status" id="updown">
+            <span class="sel" id="span_prev"></span><span id="span_next"></span>
+            </div>
+            <b class="next" id="next"></b> 
+        </div>  
+        <div class="box_css">
+          <div id="slider2" class="swipe-jy" >
+            <ul class="box01_list">
+              <li class="li_list" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="32" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+              
+               <li class="li_list" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="33" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+              
+               <li class="li_list" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="34" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+             
+            </ul>
+         </div>
+          <div class="s_shead threeColuNav">
+            <ul id="pagenavi2" class="jy-page">
+              <li class="one"><a href="javasript:void(0);" class="active">品牌报道</a></li>
+              <li class="two"><a href="javasript:void(0);">行业新闻</a></li>
+              <li class="three"><a href="javasript:void(0);">蛋糕培训学堂</a></li> 
+            </ul>
+          </div>
+        </div>
+		<script>
+        var total=$(".box_css").length+1; 
+        for(n=1;n<total;n++){
+            var page='pagenavi'+n;
+            var mslide='slider'+n;
+            var mtitle='emtitle'+n;
+            arrdiv = 'arrdiv' + n;
+            if(n == 1)
+            {
+                var as = document.getElementById(page).getElementsByTagName('b');
+                var tt=new TouchSlider({id:mslide,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var as = document.getElementById(this.page).getElementsByTagName('b');			
+                    if(as[index].id=='prev')
+                    {
+                        document.getElementById('span_prev').className = 'sel' ;
+                        document.getElementById('span_next').className = '' ;
+                    }
+                    if(as[index].id=='next')
+                    {
+                        document.getElementById('span_prev').className = '' ;
+                        document.getElementById('span_next').className = 'sel' ;
+                    }
+                    this.p=index;		
+                }});
+            }
+            if(n == 2)
+            {
+                as = document.getElementById(page).getElementsByTagName('a');
+                var tt=new TouchSlider({id:mslide,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var as=document.getElementById(this.page).getElementsByTagName('a');
+                    as[this.p].className='';
+                    as[index].className='active';
+                    this.p=index;
+                }});
+            }
+            tt.page = page;
+            tt.p = 0;
+            for(var i=0;i<as.length;i++){
+                (function(){
+                    var j=i;
+                    as[j].tt = tt;
+                    as[j].onclick=function(){
+                        this.tt.slide(j);
+                        return false;
+                    }
+                })();
+            }
+        }
+        </script> 
+   </div>
+</div>
+
+<div class="cont newsNavBgColor">
+	<div class="wrap marginTop20">
+		<script src="/templets/pc/js/timeNewsLuBoo.js"></script>
+        <div class="box_csso"  >
+        </div> 
+        <div id="pagenavio1" > 
+            <b class="prevo" id="prevo"></b>
+            <div class="in-entry-statuso" id="updowno">
+            <span class="selo" id="span_prevo"></span><span id="span_nexto"></span>
+            </div>
+            <b class="nexto" id="nexto"></b> 
+        </div>  
+        <div class="box_csso">
+          <div id="slidero2" class="swipe-jyo" >
+            <ul class="box01_listo">
+              <li class="li_listo" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="35" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+              
+               <li class="li_listo" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="36" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+              
+               <li class="li_listo" >
+              	<div class="newsNav marginTop20">
+					{dede:arclist typeid="8" type="image." row="4" }
+					<div class="content">
+						<p class="box">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+						</p>
+						<p class="h3">
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:title /]
+							</a>
+						</p>
+						<p class="title">
+							<span>Time:[field:pubdate function="MyDate('Y.m.d',@me)"/]</span>
+							<span class="con">	
+								[field:description function='cn_substr(@me,120)'/]...
+							</span>
+						</p>
+					</div>
+					{/dede:arclist}		
+				</div>
+              </li>
+             
+            </ul>
+         </div>
+          <div class="s_sheado threeColuNav">
+            <ul id="pagenavio2" class="jy-pageo">
+              <li class="one"><a href="javasript:void(0);" class="activeo">创业指南</a></li>
+              <li class="two"><a href="javasript:void(0);">就业指导</a></li>
+              <li class="three"><a href="javasript:void(0);">西点培训问答</a></li> 
+            </ul>
+          </div>
+        </div>
+		<script>
+        var totalo=$(".box_csso").length+1; 
+        for(n=1;n<totalo;n++){
+            var pageo='pagenavio'+n;
+            var mslideo='slidero'+n;
+            var mtitleo='emtitleo'+n;
+            arrdivo = 'arrdivo' + n;
+            if(n == 1)
+            {
+                var aso = document.getElementById(pageo).getElementsByTagName('b');
+                var tto=new TouchSlidero({id:mslideo,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var aso = document.getElementById(this.pageo).getElementsByTagName('b');			
+                    if(aso[index].id=='prevo')
+                    {
+                        document.getElementById('span_prevo').className = 'selo' ;
+                        document.getElementById('span_nexto').className = '' ;
+                    }
+                    if(aso[index].id=='next')
+                    {
+                        document.getElementById('span_prevo').className = '' ;
+                        document.getElementById('span_nexto').className = 'selo' ;
+                    }
+                    this.p=index;		
+                }});
+            }
+            if(n == 2)
+            {
+                aso = document.getElementById(pageo).getElementsByTagName('a');
+                var tto=new TouchSlidero({id:mslideo,'auto':'-1',fx:'ease-out',direction:'left',speed:300,timeout:2000,'before':function(index){
+                    var as=document.getElementById(this.pageo).getElementsByTagName('a');
+                    aso[this.p].className='';
+                    aso[index].className='activeo';
+                    this.p=index;
+                }});
+            }
+            tto.pageo = pageo;
+            tto.p = 0;
+            for(var i=0;i<aso.length;i++){
+                (function(){
+                    var j=i;
+                    aso[j].tto = tto;
+                    aso[j].onclick=function(){
+                        this.tto.slideo(j);
+                        return false;
+                    }
+                })();
+            }
+        }
+        </script> 
+   </div>
+</div>
+
+{dede:include filename="message.htm"/} 
+
+{dede:include filename="iconBrand.htm"/}
+
+{dede:include filename="worldImg.htm"/}   
+    
+{dede:include filename="footer.htm"/}
+         
+</body>
+</html>

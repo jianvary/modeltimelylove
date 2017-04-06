@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.seotitle /}_{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+<div class="cont">
+    <div class="wrap">
+        <div class="contentPage marginTop20">
+            <div class="leftTwo">
+                <div class="nav">
+                    <p> 
+                        {dede:field name='position'/}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cont">
+    <div class="wrap">
+        <div class="contentPage marginTopBottom20">
+            <div class="qAaCon">
+                <div class="product">
+                	<ul >
+                		{dede:list pagesize='9' titlelen="36"}
+                		<li>
+							<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+								[field:image /]
+							</a>
+							<span>
+								<a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+									[field:title /]
+								</a>
+							</span>
+						</li>
+                		{/dede:list}
+               		</ul>
+                </div>
+                <div class="pagesTong">
+                	<div class="pageCon">
+		               <ul class="pagelist">
+		                {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+		               </ul>
+              		</div>
+                </div>
+            </div>
+        </div><!-- contentPage -->
+    </div>
+</div>
+  
+{dede:include filename="footer.htm"/}
+
+</body>  
+</html>
+

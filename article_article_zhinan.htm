@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.title/}_{dede:global.cfg_indexname/}</title>
+   	<meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+<div class="cont">
+	<div class="wrap">
+		<div class="recommendTitle">
+			<p class="t1">
+				
+			</p>
+			<p class="t2">
+				<span class="s1">BRAND INFORMATION</span> 
+				<span class="s2">创业指南</span>
+			</p>
+			<p class="t3">
+				
+			</p>
+			<p class="t4 redBorder5">
+				<span class="lefto">
+					<span>
+						今日阅读 
+					</span>
+					<span>
+						创业指南
+					</span>
+				</span>
+				<span class="righto">
+					有些学员上完所有的蛋糕培训技术课程开始创建自有品牌，但是砸了20万，50万，100万，就真的有回报吗？雪中送炭觉得不懂品牌营销就有可能让钱打水漂。
+				</span>
+			</p>
+			<p class="t5">
+				<img src="/templets/pc/images/navLogo.png" />
+			</p>
+		</div>
+	</div>
+</div>
+ 
+{dede:include filename="tongArticleContent.htm"/} 
+    
+{dede:include filename="footer.htm"/} 
+
+    
+</body>
+</html>
+
